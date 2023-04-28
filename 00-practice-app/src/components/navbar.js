@@ -1,7 +1,15 @@
 // src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./footer";
 import "./navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faFolderOpen,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
@@ -9,25 +17,26 @@ function Navbar() {
       <ul>
         <li>
           <Link to="/" className="nav-link">
-            Home
+            <FontAwesomeIcon icon={faHome} className="icon" /> Home
           </Link>
         </li>
         <li>
           <Link to="/about" className="nav-link">
-            About
+            <FontAwesomeIcon icon={faUser} className="icon" /> About
           </Link>
         </li>
         <li>
           <Link to="/projects" className="nav-link">
-            Projects
+            <FontAwesomeIcon icon={faFolderOpen} className="icon" /> Projects
           </Link>
         </li>
         <li>
           <Link to="/contact" className="nav-link">
-            Contact
+            <FontAwesomeIcon icon={faEnvelope} className="icon" /> Contact
           </Link>
         </li>
       </ul>
+      <Footer />
     </nav>
   );
 }

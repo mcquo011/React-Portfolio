@@ -11,7 +11,7 @@ import Home from "./components/home";
 import Contact from "./components/contact";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import "./App.css";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <div className="app">
         <Navbar />
 
-        <main>
+        <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -28,7 +28,6 @@ function App() {
           </Routes>
         </main>
 
-        <Footer />
       </div>
     </Router>
   );
