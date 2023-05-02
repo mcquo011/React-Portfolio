@@ -2,7 +2,7 @@
 .navbar {
   background-color: #101010;
   height: 100vh;
-  padding: 6rem;
+  padding: 5rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -18,21 +18,23 @@
 }
 
 .navbar li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
+  font-family: 'Castoro Titling', cursive;
 }
 
 .nav-link:hover {
   color: #ccc;
+  color: rgba(255, 211, 0, 0.9)
 }
 
 .icon {
-  font-size: 1.5rem; /* adjust the size of the icon */
-  margin-right: 0.5rem; /* add some space between the icon and text */
+  font-size: 1rem; 
+  margin-right: 0.8rem; 
 }
 
 

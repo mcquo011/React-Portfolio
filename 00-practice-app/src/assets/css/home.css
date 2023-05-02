@@ -3,13 +3,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: calc(100vh - 60px); /* Adjust 60px according to your navbar height */
-  padding-right: 50px; /* Add padding or margin to the right side of the container */
+  height: calc(100vh - 60px); 
+  padding-right: 50px; 
   color: white;
 }
 .title {
   text-align: left;
   font-family: 'Castoro Titling', cursive;
+  font-size: 3em;
   
 }
 
@@ -59,8 +60,9 @@
 
 .typewriter-container {
   min-height: 80px;
-  min-width: 400px; /* Set a minimum width for the container */
+  min-width: 400px; 
   display: inline-block;
+  font-size: 20px;
 }
 
 /* Add keyframes for each phrase */

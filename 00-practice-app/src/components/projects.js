@@ -14,26 +14,33 @@ function Projects() {
       <div className="projects-grid">
         <div className="project-item">
           <img src={project1} alt="Project 1" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 1</div>
         </div>
+
         <div className="project-item">
           <img src={project2} alt="Project 2" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 2</div>
         </div>
         <div className="project-item">
           <img src={project3} alt="Project 3" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 3</div>
         </div>
         <div className="project-item">
           <img src={project4} alt="Project 4" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 4</div>
         </div>
         <div className="project-item">
           <img src={project5} alt="Project 4" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 4</div>
         </div>
         <div className="project-item">
           <img src={project6} alt="Project 4" className="project-image" />
+          <div className="project-image-overlay">Project 1</div>
           <div className="project-title">Project 4</div>
         </div>
       </div>

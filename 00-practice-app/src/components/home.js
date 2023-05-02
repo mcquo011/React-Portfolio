@@ -12,10 +12,8 @@ import Typewriter from "./typewriter"; // Import the Typewriter component
 function Home() {
   const phrases = [
     "Full stack web developer",
-    "Women in STEM",
-    "Phrase 3",
-    "Phrase 4",
-    "Phrase 5",
+    "Woman in Tech",
+    "Deep passion for both technology and the environment",
   ];
 
   return (
