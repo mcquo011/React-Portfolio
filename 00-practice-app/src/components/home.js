@@ -1,4 +1,3 @@
-// src/pages/HomePage.js
 import React from "react";
 import "../assets/css/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,17 +7,23 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import myPhoto from "../assets/images/me.jpg";
-
+import Typewriter from "./typewriter"; // Import the Typewriter component
 
 function Home() {
+  const phrases = [
+    "Full stack web developer",
+    "Women in STEM",
+    "Phrase 3",
+    "Phrase 4",
+    "Phrase 5",
+  ];
+
   return (
     <div className="home-container">
       <img src={myPhoto} alt="Maggie McQuown" className="profile-photo" />
-      <div className="title">
-        <h1>Maggie McQuown</h1>
-        <p className="typewriter">
-          Crafting elegant solutions as a full stack developer
-        </p>
+      <div>
+        <h1 className="title">Maggie McQuown</h1>
+        <Typewriter phrases={phrases} />
         <div className="social-media-icons">
           <a
             href="https://www.github.com/mcquo011"

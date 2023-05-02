@@ -30,6 +30,12 @@
   color: #ccc;
 }
 
+.icon {
+  font-size: 1.5rem; /* adjust the size of the icon */
+  margin-right: 0.5rem; /* add some space between the icon and text */
+}
+
+
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
   .navbar {

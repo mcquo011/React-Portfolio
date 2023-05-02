@@ -16,6 +16,7 @@
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em; 
+  font-family: 'Castoro Titling', cursive;
   animation:
   typing 3.5s steps(40, end) forwards,
     blink-caret .75s step-end 4,
@@ -33,6 +34,7 @@
 
 .about-text {
   text-align: left;
+  font-family: 'Castoro', serif;
 }
 
 /* Media query for small screens */

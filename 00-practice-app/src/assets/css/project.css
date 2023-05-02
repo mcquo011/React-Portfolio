@@ -1,0 +1,73 @@
+.projects-container {
+  padding: 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+    font-family: 'Castoro Titling', cursive;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+  gap: 1px;
+}
+
+.project-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-item:hover .project-title {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    margin: 0 -5px;
+  }
+
+  .project-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-item {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}

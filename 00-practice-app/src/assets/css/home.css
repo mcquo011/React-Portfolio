@@ -9,6 +9,8 @@
 }
 .title {
   text-align: left;
+  font-family: 'Castoro Titling', cursive;
+  
 }
 
 .social-media-icons {
@@ -41,38 +43,48 @@
 }
 
 /* home.css */
-
-/* Add typing keyframes animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Add blinking caret keyframes animation */
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
-
 .typewriter {
-  position: relative;
   overflow: hidden;
-  display: inline-block;
   white-space: nowrap;
-  animation: typing 4s steps(40, end) forwards,
-    blink-caret 1s step-end infinite;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  font-family: 'Castoro', serif;
+  animation:
+    typing1 3s steps(25, end) forwards,
+    typing2 3s steps(25, end) 3s forwards,
+    typing3 3s steps(25, end) 6s forwards,
+    typing4 3s steps(25, end) 9s forwards,
+    typing5 3s steps(25, end) 12s forwards;
 }
 
-.typewriter::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-right: 2px solid;
+.typewriter-container {
+  min-height: 80px;
+  min-width: 400px; /* Set a minimum width for the container */
+  display: inline-block;
+}
+
+/* Add keyframes for each phrase */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing3 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing4 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing5 {
+  from { width: 0 }
+  to { width: 100% }
 }
