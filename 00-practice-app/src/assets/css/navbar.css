@@ -29,3 +29,21 @@
 .nav-link:hover {
   color: #ccc;
 }
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    margin-bottom: 0;
+  }
+}

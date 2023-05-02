@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-import "./navbar.css";
+import "../assets/css/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -36,7 +36,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <Footer />
+      {/* <Footer /> */}
     </nav>
   );
 }
