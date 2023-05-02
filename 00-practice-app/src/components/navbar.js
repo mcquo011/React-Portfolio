@@ -8,6 +8,7 @@ import {
   faUser,
   faFolderOpen,
   faEnvelope,
+  faFileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
@@ -44,6 +45,17 @@ function Navbar() {
             Projects
           </Link>
         </li>
+        <li>
+          <Link to="/resume" className="nav-link">
+            <FontAwesomeIcon
+              icon={faFileAlt}
+              className="icon"
+              style={{ fontSize: "1.2rem" }}
+            />{" "}
+            Resume
+          </Link>
+        </li>
+
         <li>
           <Link to="/contact" className="nav-link">
             <FontAwesomeIcon

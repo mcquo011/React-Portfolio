@@ -1,0 +1,41 @@
+.resume-container {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.resumeTitle {
+    font-family: 'Castoro Titling', cursive;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #f9f1f1;
+  border-radius: 5px;
+  color: white;
+}
+
+
+.download-button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #f5faf5;
+  color: rgb(20, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.download-button:hover {
+  background-color: #3e578e;
+}
