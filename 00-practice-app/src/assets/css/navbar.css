@@ -43,7 +43,6 @@
 
 .navbar-toggle {
   display: none;
-  /* Add your desired styles for the button, e.g., background-color, border, etc. */
   color: white;
   background-color: transparent;
   border: none;
@@ -69,7 +68,6 @@
 
   .navbar-toggle {
     display: block;
-    /* Add any additional styles for the button on smaller screens */
   }
 
   .nav-links.collapsed {

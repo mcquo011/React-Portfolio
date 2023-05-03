@@ -65,7 +65,7 @@
   font-size: 20px;
 }
 
-/* Add keyframes for each phrase */
+
 @keyframes typing1 {
   from { width: 0 }
   to { width: 100% }
@@ -89,4 +89,29 @@
 @keyframes typing5 {
   from { width: 0 }
   to { width: 100% }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 300px;
+    padding: 0; 
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .typewriter-container {
+    min-width: 300px;
+  }
 }
