@@ -1,6 +1,7 @@
+/* app.css */
 .App {
   text-align: center;
-    min-height: 100vh;
+  min-height: 100vh;
   position: relative;
   background-color: #32363d;
 }
@@ -12,7 +13,14 @@
 
 .content {
   flex-grow: 1;
-  margin-left: 200px; /* Adjust this value according to your desired sidebar width */
+  margin-left: 200px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0; 
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
