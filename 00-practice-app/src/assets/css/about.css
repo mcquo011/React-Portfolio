@@ -31,12 +31,13 @@
   height: 400px;
   object-fit: cover;
   margin-right: 6rem;
+  margin-left: 10rem;
 }
 
 .about-text {
   text-align: left;
   font-family: 'Castoro', serif;
-  width: 100%;
+  width: 80%;
 }
 
 /* Media query for small screens */

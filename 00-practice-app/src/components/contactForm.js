@@ -49,6 +49,9 @@ const ContactForm = () => {
         />
         <button type="submit">Send</button>
       </form>
+      <div>
+        <p className="or">Or Email me at omcquown@gmail.com</p>
+        </div>
     </div>
   );
 };

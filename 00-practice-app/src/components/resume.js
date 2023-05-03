@@ -1,5 +1,7 @@
 import React from "react";
 import "../assets/css/resume.css";
+import resumeFile from "../assets/images/resume.pdf";
+
 
 function Resume() {
   return (
@@ -16,9 +18,11 @@ function Resume() {
       </ul>
 
       <h2 className="resumeTitle">Certification</h2>
-      <p>Full Stack Web Development Certificate from The University of Minnesota</p>
+      <p>
+        Full Stack Web Development Certificate from The University of Minnesota
+      </p>
 
-      <a href="/path/to/your/resume.pdf" download>
+      <a href={resumeFile} download>
         <button className="download-button">Download Resume</button>
       </a>
     </div>

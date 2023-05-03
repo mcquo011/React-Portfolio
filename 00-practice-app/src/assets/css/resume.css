@@ -1,8 +1,7 @@
 .resume-container {
-  padding: 2rem;
   text-align: center;
   color: white;
-  padding: 5rem;
+  padding: 7rem;
 }
 
 .resumeTitle {
@@ -35,6 +34,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-out;
+  margin-top: 50px;
 }
 
 .download-button:hover {
