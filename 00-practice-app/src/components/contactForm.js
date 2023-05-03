@@ -1,23 +1,40 @@
-// src/components/ContactForm.js
-
 import React, { useState } from "react";
 import "../assets/css/contact.css";
+import emailjs from "emailjs-com"; // Import EmailJS
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+const [formData, setFormData] = useState({
+  to_name: "Maggie",
+  from_name: "",
+  email: "",
+  message: "",
+});
 
-  const handleChange = (event) => {
+const handleChange = (event) => {
+  if (event.target.name === "name") {
+    setFormData({ ...formData, from_name: event.target.value });
+  } else {
     setFormData({ ...formData, [event.target.name]: event.target.value });
-  };
+  }
+};
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form data submitted:", formData);
-    // You can replace the console.log with a function to send the form data to your backend or an email service.
+
+
+    const serviceID = "service_m1ywoxw";
+    const templateID = "template_4qe4veg";
+    const userID = "aYMGORdACoHQoFtBQ";
+
+    emailjs.send(serviceID, templateID, formData, userID).then(
+      (response) => {
+        console.log("Email sent successfully:", response);
+      },
+      (error) => {
+        console.log("Email sending error:", error);
+      }
+    );
   };
 
   return (
@@ -51,7 +68,7 @@ const ContactForm = () => {
       </form>
       <div>
         <p className="or">Or Email me at omcquown@gmail.com</p>
-        </div>
+      </div>
     </div>
   );
 };
