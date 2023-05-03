@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
 import "../assets/css/navbar.css";
@@ -9,12 +10,35 @@ import {
   faFolderOpen,
   faEnvelope,
   faFileAlt,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
+  const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsCollapsed(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <nav className="navbar">
-      <ul>
+      <button onClick={toggleNavbar} className="navbar-toggle">
+        {/* Replace "Menu" with the faBars icon */}
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      <ul className={`nav-links ${isCollapsed ? "collapsed" : ""}`}>
         <li>
           <Link to="/" className="nav-link">
             <FontAwesomeIcon

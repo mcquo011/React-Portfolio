@@ -1,4 +1,4 @@
-/* src/components/Navbar.css */
+/* Add this to your CSS */
 .navbar {
   background-color: #101010;
   height: 100vh;
@@ -37,8 +37,20 @@
   margin-right: 0.8rem; 
 }
 
+.navbar .nav-links.collapsed {
+  display: none;
+}
 
-/* Media query for small screens */
+.navbar-toggle {
+  display: none;
+  /* Add your desired styles for the button, e.g., background-color, border, etc. */
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     height: auto;
@@ -47,11 +59,25 @@
   }
 
   .navbar ul {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
   }
 
   .navbar li {
     margin-bottom: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    /* Add any additional styles for the button on smaller screens */
+  }
+
+  .nav-links.collapsed {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
   }
 }
