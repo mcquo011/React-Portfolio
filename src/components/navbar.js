@@ -34,8 +34,8 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+      <div className="mm-link">M.M.</div>
       <button onClick={toggleNavbar} className="navbar-toggle">
-        {/* Replace "Menu" with the faBars icon */}
         <FontAwesomeIcon icon={faBars} />
       </button>
       <ul className={`nav-links ${isCollapsed ? "collapsed" : ""}`}>

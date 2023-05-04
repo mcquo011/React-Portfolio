@@ -16,7 +16,7 @@
   animation:
     typing 3.5s steps(40, end) forwards,
     blink-caret .75s step-end 4,
-    hide-cursor 0.01s 3.5s forwards;
+    hide-cursor 0.01s 1s forwards;
 }
 
 .projects-grid {
@@ -97,6 +97,10 @@
 
 
 @media screen and (max-width: 768px) {
+   .projects-container {
+    margin-top: 90px;
+  }
+
   .projects-grid {
     margin: 0 -5px;
   }
