@@ -21,35 +21,35 @@ function Projects() {
       name: "Hungee!",
       image: project2,
       github: "https://github.com/example/project2",
-      liveUrl: "https://example.com/project2", // Add the correct live URL
+      liveUrl: "https://mcquo011.github.io/HungeeApp/",
       technologies: ["JavaScript/", "Edamam API/", "Bulma"],
     },
     {
       name: "Note Taker",
       image: project3,
       github: "https://github.com/example/project3",
-      liveUrl: "https://example.com/project3", // Add the correct live URL
+      liveUrl: "https://note-taker-mm.herokuapp.com/", 
       technologies: ["Node.js/", "Express"],
     },
     {
       name: "Text Editor",
       image: project4,
       github: "https://github.com/example/project4",
-      liveUrl: "https://example.com/project4", // Add the correct live URL
+      liveUrl: "https://pure-river-50623.herokuapp.com/",
       technologies: ["idb/", "Webpack/", "Workbox"],
     },
     {
       name: "Employee Tracker",
       image: project5,
       github: "https://github.com/example/project5",
-      liveUrl: "https://example.com/project5", // Add the correct live URL
+      liveUrl: "https://github.com/mcquo011/SQL-employee-tracker",
       technologies: ["Node.js/", "MySQL/", "JavaScript"],
     },
     {
       name: "Weather App",
       image: project6,
       github: "https://github.com/example/project6",
-      liveUrl: "https://example.com/project6", // Add the correct live URL
+      liveUrl: "https://mcquo011.github.io/weather-application/", 
       technologies: ["JavaScript/", "Open Weather API"],
     },
   ];
@@ -68,12 +68,18 @@ function Projects() {
               />
             </a>
             <div className="project-image-overlay">
-              <div
-                className="project-name"
-                style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {project.name}
-              </div>
+                <div
+                  className="project-name"
+                  style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}
+                >
+                  {project.name}
+                </div>
+              </a>
               <div className="project-technologies">
                 {project.technologies.map((technology, index) => (
                   <span key={index}>{technology}</span>
