@@ -1,7 +1,7 @@
 # Portfolio
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Description 
+## Description 
 
  This is a portfolio website built using React. It showcases my skills and experience as a developer and provides an overview of my projects.
 
@@ -21,24 +21,24 @@
 * CSS
 * JavaScript
 
-  ## Usage 
+## Usage 
 
   Click the link
 
-  ## Screenshots 
+## Screenshots 
 
-  ![Alt text](../React-Portfolio/src/assets/images/Screen%20Shot%202023-05-07%20at%205.26.09%20PM.png?raw=true)
+  ![Alt text](./src/assets/images/Screen%20Shot%202023-05-07%20at%205.26.09%20PM.png?raw=true)
 
-  ## Contributers 
+## Contributers 
 
   me
 
-  ## License 
-  
+## License 
+
   Copyright (c)
   [MIT](https://opensource.org/licenses/MIT)
 
-  ## Questions 
+## Questions 
 
   You can visit my Github Profile here: [mcquo011](https://github.com/mcquo011/) 
   If you have any questions please email me at omcquown@gmail.com
