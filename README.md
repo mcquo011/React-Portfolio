@@ -5,7 +5,7 @@
 
  This is a portfolio website built using React. It showcases my skills and experience as a developer and provides an overview of my projects.
 
-  ## Features 
+## Features 
 
 * Responsive design that looks great on desktop and mobile devices
 * Navigation bar with links to different sections of the website
@@ -24,6 +24,10 @@
   ## Usage 
 
   Click the link
+
+  ## Screenshots 
+
+  ![Alt text](../React-Portfolio/src/assets/images/Screen%20Shot%202023-05-07%20at%205.26.09%20PM.png?raw=true)
 
   ## Contributers 
 
