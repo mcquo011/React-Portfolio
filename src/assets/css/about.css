@@ -1,4 +1,3 @@
-
 .about-page {
   display: flex;
   justify-content: center;
@@ -37,7 +36,15 @@
 .about-text {
   text-align: left;
   font-family: 'Castoro', serif;
-  width: 80%;
+  margin-right: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .about-image {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* Media query for small screens */
@@ -54,6 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Add this line */
   }
 
   .about-title h1 {
@@ -62,15 +70,19 @@
 
   .about-text {
     max-width: 90%;
+    margin: auto;
+    text-align: center;
   }
 
+
   .about-image {
-    margin-top: 100px;
-    margin-bottom: 3rem;
+    display: block; 
+    margin: 100px auto 3rem auto;
     width: 200px;
     height: 200px;
   }
 }
+
 
 /* The typing effect */
 @keyframes typing {
@@ -88,5 +100,3 @@
 @keyframes hide-cursor {
   to { border-color: transparent }
 }
-
-
