@@ -27,7 +27,7 @@
 
 ## Screenshots 
 
-  ![Alt text](./src/assets/images/Screen%20Shot%202023-05-07%20at%205.26.09%20PM.png?raw=true)
+![Alt Text](./src/assets/images/Screen%20Shot%202023-05-07%20at%205.26.09%20PM.png?raw=true)
 
 ## Contributers 
 
