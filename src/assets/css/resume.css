@@ -6,7 +6,7 @@
 
 .resumeTitle {
   font-family: 'Castoro Titling', cursive;
-  margin-bottom: 1rem; /* Add this line */
+  margin-bottom: 1rem; 
 }
 
 .skills-list {
@@ -43,13 +43,19 @@
 
 @media screen and (max-width: 768px) {
   .skills-list {
-    flex-wrap: nowrap; /* Add this line */
-    flex-direction: column; /* Add this line */
+    flex-wrap: nowrap; 
+    flex-direction: column; 
   }
   
   .skills-list li {
-    width: 100%; /* Add this line */
-    box-sizing: border-box; /* Add this line */
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .resumeTitle {
+    display: flex;
+    justify-content: center;
+    
   }
 }
 

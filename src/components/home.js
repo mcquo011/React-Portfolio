@@ -13,7 +13,7 @@ function Home() {
   const phrases = [
     "Full stack web developer",
     "Woman in Tech",
-    "Deep passion for both technology and the environment",
+    "Passion for technology and the environment",
   ];
 
   return (
