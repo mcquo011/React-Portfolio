@@ -1,10 +1,6 @@
 .navbar {
   background-color: #101010;
-  height: 100vh;
   padding: 5rem;
-  position: fixed;
-  left: 0;
-  top: 0;
   opacity: 0.7;
   z-index: 1000;
 }
@@ -102,4 +98,3 @@
     flex-direction: column;
   }
 }
-
