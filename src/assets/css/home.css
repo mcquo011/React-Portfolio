@@ -108,7 +108,8 @@
   .profile-photo {
     width: 200px;
     height: 200px;
-    margin-bottom: 1rem;
+     display: block; 
+    margin: 100px auto 3rem auto;
   }
 
   .typewriter-container {

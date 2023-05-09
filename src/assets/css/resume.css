@@ -5,7 +5,8 @@
 }
 
 .resumeTitle {
-    font-family: 'Castoro Titling', cursive;
+  font-family: 'Castoro Titling', cursive;
+  margin-bottom: 1rem; /* Add this line */
 }
 
 .skills-list {
@@ -24,7 +25,6 @@
   color: white;
 }
 
-
 .download-button {
   padding: 1rem;
   font-size: 1.2rem;
@@ -40,3 +40,21 @@
 .download-button:hover {
   background-color: rgba(255, 211, 0, 0.9);
 }
+
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-wrap: nowrap; /* Add this line */
+    flex-direction: column; /* Add this line */
+  }
+  
+  .skills-list li {
+    width: 100%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+  }
+}
+
+
+
+
+
+

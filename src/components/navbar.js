@@ -39,7 +39,7 @@ return (
     </button>
     <ul className={`nav-links ${isCollapsed ? "collapsed" : ""}`}>
       <li>
-        <Link to="/" className="nav-link" onClick={() => isCollapsed && toggleNavbar()}>
+        <Link to="/" className="nav-link" onClick={toggleNavbar}>
           <FontAwesomeIcon
             icon={faHome}
             className="icon"
@@ -49,7 +49,7 @@ return (
         </Link>
       </li>
       <li>
-        <Link to="/about" className="nav-link" onClick={() => isCollapsed && toggleNavbar()}>
+        <Link to="/about" className="nav-link" onClick={toggleNavbar}>
           <FontAwesomeIcon
             icon={faUser}
             className="icon"
@@ -59,7 +59,7 @@ return (
         </Link>
       </li>
       <li>
-        <Link to="/projects" className="nav-link" onClick={() => isCollapsed && toggleNavbar()}>
+        <Link to="/projects" className="nav-link" onClick={toggleNavbar}>
           <FontAwesomeIcon
             icon={faFolderOpen}
             className="icon"
@@ -69,7 +69,7 @@ return (
         </Link>
       </li>
       <li>
-        <Link to="/resume" className="nav-link" onClick={() => isCollapsed && toggleNavbar()}>
+        <Link to="/resume" className="nav-link" onClick={toggleNavbar}>
           <FontAwesomeIcon
             icon={faFileAlt}
             className="icon"
@@ -80,7 +80,7 @@ return (
       </li>
 
       <li>
-        <Link to="/contact" className="nav-link" onClick={() => isCollapsed && toggleNavbar()}>
+        <Link to="/contact" className="nav-link" onClick={toggleNavbar}>
           <FontAwesomeIcon
             icon={faEnvelope}
             className="icon"
