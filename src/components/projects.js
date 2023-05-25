@@ -5,11 +5,18 @@ import project2 from "../assets/images/project2.png";
 import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
-import project6 from "../assets/images/project6.png";
+import project6 from "../assets/images/localHarvest.png"
 
 
 function Projects() {
   const projects = [
+    {
+      name: "Local Harvest",
+      image: project6,
+      github: "https://github.com/example/project6",
+      liveUrl: "https://local-harvest.herokuapp.com/#/",
+      technologies: ["React", "Mongoose"],
+    },
     {
       name: "Be For Reel",
       image: project1,
@@ -28,7 +35,7 @@ function Projects() {
       name: "Note Taker",
       image: project3,
       github: "https://github.com/example/project3",
-      liveUrl: "https://note-taker-mm.herokuapp.com/", 
+      liveUrl: "https://note-taker-mm.herokuapp.com/",
       technologies: ["Node.js/", "Express"],
     },
     {
@@ -44,13 +51,6 @@ function Projects() {
       github: "https://github.com/example/project5",
       liveUrl: "https://github.com/mcquo011/SQL-employee-tracker",
       technologies: ["Node.js/", "MySQL/", "JavaScript"],
-    },
-    {
-      name: "Weather App",
-      image: project6,
-      github: "https://github.com/example/project6",
-      liveUrl: "https://mcquo011.github.io/weather-application/", 
-      technologies: ["JavaScript/", "Open Weather API"],
     },
   ];
 
